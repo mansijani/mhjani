@@ -1,0 +1,22 @@
+
+
+.hotspot2
+{margin-top: 255px;
+padding-left: 265px;
+position: absolute;}
+
+.hotspot3
+{
+margin-top: 280px;
+padding-left: 250px;
+position: absolute;
+}
+
+@media all and (max-width:900px;)
+{
+.hotspot2 
+{
+margin-top:265px;
+padding-left:35px;
+}
+}

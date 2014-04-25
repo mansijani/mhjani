@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>forms</title>
+
+    <!-- Bootstrap -->
+    <link href="./resources/css/bootstrap.css" rel="stylesheet">
+	<link href="./resources/css/bootstrap-theme.css" rel="stylesheet">
+	<link href="./resources/css/skin.css" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	</head>
+	<body>
+	<section>
+	<form role="form">
+	
+	<div class="container">
+  <div class="form-group">
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputFile">File input</label>
+    <input type="file" id="exampleInputFile">
+    <p class="help-block">Example block-level help text here.</p>
+  </div>
+  <div class="checkbox">
+    <label>
+      <input type="checkbox"> Check me out
+    </label>
+  </div>
+  <button type="submit" class="btn btn-default">Submit</button>
+</form>
+</div>
+</section>
+
+<p></p>
+<form class="form-inline" style="width:50%;" role="form">
+  <div class="form-group">
+    <label class="sr-only" for="exampleInputEmail2">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Enter email">
+  </div>
+  <div class="form-group">
+    <label class="sr-only" for="exampleInputPassword2">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password">
+  </div>
+  <div class="checkbox">
+    <label>
+      <input type="checkbox"> Remember me
+    </label>
+  </div>
+  <button type="submit" class="btn btn-default">Sign in</button>
+</form>
+<p></p>
+<!-----form with rows--->
+<form class="form-horizontal" style="width:50%; "role="form">
+  <div class="form-group">
+    <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+    <div class="col-sm-10">
+      <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+    <div class="col-sm-10">
+      <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <div class="checkbox">
+        <label>
+          <input type="checkbox"> Remember me
+        </label>
+      </div>
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <button type="submit" class="btn btn-default">Sign in</button>
+    </div>
+  </div>
+</form>
+
+<p></p>
+<div class="container">
+<textarea class="form-control" rows="3"></textarea>
+</div>
+<p></p>
+
+<div class="container">
+<div class="checkbox">
+  <label>
+    <input type="checkbox" value="">
+    Option one is this and that&mdash;be sure to include why it's great
+  </label>
+</div>
+
+
+<div class="radio">
+  <label>
+    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+    Option one is this and that&mdash;be sure to include why it's great
+  </label>
+</div>
+<div class="radio">
+  <label>
+    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+    Option two can be something else and selecting it will deselect option one
+  </label>
+</div>
+</div>
+<p></p>
+
+<label class="radio-inline">
+  <input type="checkbox" id="inlineCheckbox1" value="option1"> 1
+</label>
+<label class="radio-inline">
+  <input type="checkbox" id="inlineCheckbox2" value="option2"> 2
+</label>
+<label class="radio-inline">
+  <input type="checkbox" id="inlineCheckbox3" value="option3"> 3
+</label>
+
+<p></p>
+<div class="container">
+<select class="form-control">
+  <option>1</option>
+  <option>2</option>
+  <option>3</option>
+  <option>4</option>
+  <option>5</option>
+</select>
+
+<select multiple class="form-control">
+  <option>1</option>
+  <option>2</option>
+  <option>3</option>
+  <option>4</option>
+  <option>5</option>
+</select>
+</div>
+
+<p></p>
+<div class="container">
+<input class="form-control box-shadow" id="disabledInput" type="text" placeholder="Disabled input here..." >
+</div>
+
+<p></p>
+
+<div class="container">
+<form role="form">
+  <fieldset disabled>
+    <div class="form-group">
+    <label for="disabledTextInput">Disabled input</label>
+    <input type="text" id="disabledTextInput" class="form-control" placeholder="Disabled input">
+    </div>
+    <div class="form-group">
+    <label for="disabledSelect">Disabled select menu</label>
+    <select id="disabledSelect" class="form-control">
+    <option>Disabled select</option>
+    </select>
+    </div>
+    <div class="checkbox">
+    <label>
+    <input type="checkbox"> Can't check this
+    </label>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </fieldset>
+</form>
+</div>
+
+<div class="container">
+<div class="form-group has-success">
+  <label class="control-label" for="inputSuccess1">Input with success</label>
+  <input type="text" class="form-control" id="inputSuccess1">
+</div>
+<div class="form-group has-warning">
+  <label class="control-label" for="inputWarning1">Input with warning</label>
+  <input type="text" class="form-control" id="inputWarning1">
+</div>
+<div class="form-group has-error">
+  <label class="control-label" for="inputError1">Input with error</label>
+  <input type="text" class="form-control" id="inputError1">
+</div>
+</div>
+
+<div class="container">
+<div class="form-group has-success has-feedback">
+  <label class="control-label" for="inputSuccess2">Input with success</label>
+  <input type="text" class="form-control" id="inputSuccess2">
+  <span class="glyphicon glyphicon-ok form-control-feedback"></span>
+</div>
+<div class="form-group has-warning has-feedback">
+  <label class="control-label" for="inputWarning2">Input with warning</label>
+  <input type="text" class="form-control" id="inputWarning2">
+  <span class="glyphicon glyphicon-warning-sign form-control-feedback"></span>
+</div>
+<div class="form-group has-error has-feedback">
+  <label class="control-label" for="inputError2">Input with error</label>
+  <input type="text" class="form-control" id="inputError2">
+  <span class="glyphicon glyphicon-remove form-control-feedback"></span>
+</div>
+</div>
+
+<p></p>
+
+<form class="form-inline" role="form">
+  <div class="form-group has-success has-feedback">
+    <label class="control-label" for="inputSuccess4">Input with success</label>
+    <input type="text" class="form-control" id="inputSuccess4">
+    <span class="glyphicon glyphicon-ok form-control-feedback"></span>
+  </div>
+</form>
+<p></p>
+<div class="container">
+<input class="form-control input-lg" type="text" placeholder=".input-lg">
+<input class="form-control" type="text" placeholder="Default input">
+<input class="form-control input-sm" type="text" placeholder=".input-sm">
+
+<select class="form-control input-lg">mansi</select>
+<select class="form-control">mehul</select>
+<select class="form-control input-sm"><option value="">.input-lg</option></select>
+</div>
+
+<p></p>
+<div class="container">
+<div class="row">
+  <div class="col-xs-2">
+    <input type="text" class="form-control" placeholder=".col-xs-2">
+  </div>
+  <div class="col-xs-3">
+    <input type="text" class="form-control" placeholder=".col-xs-3">
+  </div>
+  <div class="col-xs-4">
+    <input type="text" class="form-control" placeholder=".col-xs-4">
+  </div>
+</div>
+</div>
+
+<p></p>
+<div class="container">
+<form role="form">
+      <input type="text" class="form-control">
+      <span class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>
+    </form>
+</div>
+
+	<div class="hidden"><p>ffjkgfjk glfg lfdgl lkgkl klkflg klflrier ekjkljklklgkl kllkhgkl lgkhkflgk kfghfljgl klklfghflhglfgfgl
+	gklgkfljgklfjl lfkfkfjk kfjefkdjk fjfhgkf kjkfjkjk jfjd kdkfjkdj keereji fgkfgfkgjf vnmnmnmvnb ererhej nmnmnmvnmvncmvffjffjfj</p></div>
+<a class="sr-only" href="#content">Skip to main content</a>
+
+
+
+	
+	
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="./resources/js/bootstrap.min.js"></script>
+	</body>
